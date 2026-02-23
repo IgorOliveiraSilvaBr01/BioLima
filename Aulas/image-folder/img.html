@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em HTML</title>
+</head>
+<body>
+    <!-- 
+    A tag <img> é usada para inserir imagens em uma página HTML
+
+    Atributos comuns
+    - src: 
+        atributo mais comum da tag <img>, pois ele especifica o caminho (URL) da imagem que será exibida (src -> source -> fonte).
+    - alt:
+        o atributo alt é usado para fornecer uma descrição alternativa da imagem, caso ela não possa ser exibida ou inspecionada.
+    - title:
+        o atributo tile oferece um texto que aparece como uma dica ou legenda quando o usuário passa o mouse sobre a imagem.  
+    -->
+
+    <img src="https://picsum.photos/200/300"> <br> <!-- atributo src -->
+
+    <img src="https://picsum.photos/200/300" alt="Imagem de um cachorro"> <br> <!-- atributo alt-->
+
+    <img src="https://picsum.photos/200/300" title="Imagem de um Cachorro"> <br> <!-- atributo tilte -->
+
+    <!-- Também é possível fazer com que uma imagem se transforme em um link para determinada página ou conteúdo, fazendo o uso da tag <a> com o atributo href, juntamente com a tag <img> -->
+    
+    <a href="https://www.google.com" title="Visite o site da Google">
+        <img src="https://picsum.photos/200/300" alt="Logo da Google">
+    </a>
+    <br>
+
+    <!-- Principais atributos para imagens
+     - src: 
+        atributo mais comum da tag <img>, pois ele especifica o caminho (URL) da imagem que será exibida (src -> source -> fonte).
+    - alt:
+        o atributo alt é usado para fornecer uma descrição alternativa da imagem, caso ela não possa ser exibida ou inspecionada.
+    - title:
+        o atributo tile oferece um texto que aparece como uma dica ou legenda quando o usuário passa o mouse sobre a imagem.
+    - width (largura):
+        define a largura da imagem em pixels.
+    - height (altura):
+        define a altura da imagem em pixels.
+    - usemap:
+        especifica um mapa para criar áreas clicáveis dentro da imagem.
+    - ismap: 
+        indica que a imagem inteira é um mapa clicável (obsoleto).
+    - longdesc:
+        especifica uma URL para uma página que contém uma descrição mais longa da imagem.
+    - loading:
+        define o comportamento do carregamento de uma imagem (lazy, eager).
+    - crossorigin:
+        especifica a política sw compartilhamento de recursos entre origens (CORS) para a imagem.
+    - decoding:
+        define como a imagem deve ser decodificada (async, sync, auto).
+    -->
+
+    <img src="https://picsum.photos/id/237/200/300" alt="Site que gera imagens aleatórias" width="200" height="300" loading="lazy"> <!-- imagem com tamanho definido e atributo loading -->
+</body>
+</html>
