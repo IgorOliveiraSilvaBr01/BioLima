@@ -1,0 +1,12 @@
+table {
+    border-collapse: collapse; 
+    text-align: left;
+}
+
+th, th {
+    padding: 10px;
+}
+
+thead {
+    background-color: orange;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Mescladas em HTML</title>
+    <link rel="stylesheet" href="tabelas-mescladas.css">
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">Lista de Filmes</th> <!-- Define que o campo irá ocupar 3 colunas-->
+            </tr>
+            <tr>
+                <th>Gênero</th>
+                <th>Filme</th>
+                <th>Ano</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td rowspan="2">Drama</td> <!-- Define que o campo irá ocupar 2 linhas -->
+                <td>O Poderoso Chefão</td>
+                <td>1972</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Alvo Duplo 2</td>
+                <td>1986</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Terror</td>
+                <td>Todo Mundo em Pânico 7</td>
+                <td>2026</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Todo Mundo em Pânico 7</td>
+                <td>2026</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Todo Mundo em Pânico 7</td>
+                <td>2026</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
