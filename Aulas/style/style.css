@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Sintaxe 
+
+seletor {
+    propriedade: valor
+} 
+
+*/
+
+p {
+    color: aqua;
+}
+
+h1 {
+    /* Nome da cor */
+    color: red;
+
+    /* Código Hex */
+    color: #f00000;
+
+    /* RGB */
+    color: rgb(216, 48, 48);
+
+    /* RGBA */
+    color: rgba(255, 0, 0, 0.5);
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: blue;
+}
+
+
+/* Fontes */
+p {
+    /* cor da fonte */
+    color: #000;
+
+    /* altera a familia da fonte */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    /* tamanho da fonte */
+    font-size: 10px;
+
+    /* espessura da fonte */
+    font-weight: 600px;
+
+    /* espaçamento da linha */
+    line-height: 10px;
+
+    /* transformando textos */
+    text-transform: lowercase;
+}
+
+.box{
+    /* width: 200px; */
+    /* largura */
+    /* height: 100px; */
+    /* altura */
+    background-color: blueviolet;
+    /* cor de fundo */
+    padding: 10px;
+    border: 5px dashed #000;
+    margin: 40px;
+}
+
+.box01 {
+    background-color: lightblue;
+    /* cor de fundo */
+    color: gray;
+    /* cor do texto */
+    padding: 10px;
+    /* 10 px de espacamento interno */
+    font-size: 50px;
+    /* tamanho da fonte */
+    font-weight: 40px;
+    /* espessura da fonte */
+    font-family: Lucida;
+    /* tipo da fonte */
+    border: 20px dotted #000;
+    /* borda */
+}
+
+.box02 {
+    background-color: #5cfe62;
+    /* cor de fundo */
+    padding: 15px 25px;
+    /* espacamento interno */
+    border: 5px solid #000;
+    /* borda */
+    border-radius: 10px;
+    /* borda arredondada de 10px */
+    margin-left: 50px;
+    /* margem de 50px a esquerda */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* tipo da fonte */
+    text-transform: uppercase;
+    /* texto em maisculo */
+}
