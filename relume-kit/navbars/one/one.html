@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 01</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        /* aplica um padrao de estilo a pagina inteira e todas as tags */
+        padding: 0;
+        /* espacamento interno dos elementos de 0 px */
+        margin: 0;
+        /* margem de 0px */
+        box-sizing: border-box;
+        /* apica uml limite a caixa dos elementos, permite que os elementos nçao ultrapassem o tamanho do elemento pai */
+        text-decoration: none;
+        /* remove todas as decorações padrão  */
+        border: none;
+        /* remove todas as bordas padrão */
+        background: none;
+        /* remove todos as cores de fundo padrão */
+        font-family: "Roboto", sans-serif;
+        font-size: 16;
+        color: #000;
+        font-weight: 400px;
+      }
+
+      header {
+        /* border: 1px solid red; */
+        /* funciona como uma orientacao ao estilizar o elemento */
+        width: 100%;
+        /* preenche 100% da largura  */
+        height: 72px;
+        /* altura de 72 px */
+        padding: 16px 64px;
+        /* padding em cima e baixo de 16px, laterais de 64px*/
+        display: flex;
+        /* torna o display flexivel */
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header-content {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+
+      nav {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+      }
+
+      .dropdown-nav {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .btn-wrapper button {
+        padding: 8px 20px;
+        border: 1px solid black;
+      }
+
+      .btn-primary {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/company-log.svg" alt="" />
+      <div class="header-content">
+        <nav>
+          <a href="">Link One</a>
+          <a href="">Link Two</a>
+          <a href="">Link Three</a>
+
+          <div class="dropdown-nav">
+            <a href="">Link Four</a>
+            <button>
+              <img src="assets/images/chevron-down.svg" alt="" />
+            </button>
+          </div>
+        </nav>
+
+        <div class="btn-wrapper">
+          <button class="btn-primary">Button</button>
+          <button>Button</button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
