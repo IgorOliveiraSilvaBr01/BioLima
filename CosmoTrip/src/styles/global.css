@@ -1,0 +1,29 @@
+/* configuração global - reset */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: none;
+}
+
+/* criando "variáveis" - tudo o que estiver dentro de root poderá ser acessado por outros arquivos */
+:root {
+    /* Paleta de Cores */
+    --color-white: #fff;
+    --color-l-black: #0F0F0F;
+    --color-black: #000;
+    --color-d-gray: #4D4D4D;
+    --color-grey: #999999;
+    --color-pink: #FF3CAC;
+
+    /* Tipografia */
+    --font-h1: 50px;
+    --font-h2: 45px;
+    --font-h3: 27px;
+    --font-h4: 21px;
+
+    --font-title: "Alexandria", sans-serif;
+    --font-body: "Inter", sans-serif;
+}

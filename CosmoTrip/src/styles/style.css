@@ -1,0 +1,100 @@
+/* importando um arquivo css a outro arquivo css */
+@import url('./global.css');
+
+body {
+    background-color: var(--color-black);
+    /* configura uma cor de fundo para a pagina em todo */
+}
+
+/* cabecalho */
+header {
+    background-color: var(--color-black);
+    /* cor de fundo */
+    display: flex;
+    /* torna o display flexivel */
+    justify-content: space-around;
+    /* distribui os itens  */
+    align-items: center;
+    /* alinha os itens ao centro */
+    gap: 200;
+    /* espacamento de 200px entre os itens */
+    padding: 20px 0px;
+    /* espacamento interno de 20px no top e bottom */
+}
+
+.navigation-header {
+    display: flex;
+    /* torna o display flexivel */
+    gap: 40px;
+    /* espacamento de 40px entre itens */
+}
+
+.navigation-header a {
+    color: var(--color-grey);
+    /* cor do texto */
+    font-family: var(--font-title);
+    /* tipo da fonte */
+}
+
+
+.navigation-header > .active {
+    color: var(--color-pink);
+    /* cor do texto */
+    font-weight: bold;
+}
+
+nav > .btn-primary {
+    color: var(--color-white);
+    /* cor do texto */
+    font-family: var(--font-title);
+    /* tipo da fonte */
+    font-weight: bold;
+    background-color: var(--color-pink);
+    /* cor de fundo */
+    padding: 10px 24px;
+    /* espacamento interno de 10px no topo e bottom e 24px nas laterais */
+    border-radius: 10px;
+    /* arredondamento de 10px na borda do elemento */
+}
+
+
+/* conteudo */
+main {
+    display: flex;
+    /* torna o display flexivel */
+    justify-content: center;
+    /* alinha os itens ao centro */
+    align-items: center;
+    /* alinha os itens ao centro */
+    gap: 100px;
+    /* espacamento de 100px entre os itens */
+    padding: 50px 0px;
+    /* espacamento interno de 60px no top e bottom */
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-main > span {
+    border: 1px solid var(--color-grey);
+    border-radius: 10px;
+    padding: 10px 12px;
+    color: var(--color-pink);
+    font-family: var(--font-title);
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.content-main > h1 {
+    color: var(--color-white);
+    font-family: var(--font-title);
+    font-weight: 50px;
+    width: 549px;
+}
+
+.content-main > h1 > span {
+    color: var(--color-pink);
+}
